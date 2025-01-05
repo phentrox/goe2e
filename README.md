@@ -1,5 +1,10 @@
 # Go Sequential E2E Testing (In Development!)
 
+## Run
+```sh
+goSecE2E
+```
+
 ## Readme
 - One folder for every test file
 - Every test file needs to end with 'test'
