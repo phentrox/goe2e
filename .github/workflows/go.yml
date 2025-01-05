@@ -25,5 +25,6 @@ jobs:
     - name: Build
       run: go build -o goSecE2E -v ./cmd
 
-    - name: Test
-      run: go test -v ./...
+    # Testing needs to be for every dir because the tests in test-data also have the test suffix resulting in failure when run!
+    - name: Test Collect Test Dirs
+      run: go test -v ./pkg/seqe2e/collect_test_dirs
