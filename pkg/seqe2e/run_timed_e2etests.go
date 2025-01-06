@@ -1,6 +1,7 @@
 package seqe2e
 
 import (
+	"fmt"
 	"time"
 )
 
@@ -14,5 +15,5 @@ func RunTimedE2ETest(testDirs []string) {
 	end := time.Now()
 	elapsed := end.Sub(start)
 
-	println("### Testing Time: %v ###", elapsed)
+	fmt.Println("### Testing Time: ", elapsed.Round(time.Second).String(), " ###")
 }
