@@ -13,6 +13,7 @@ goSecE2E
 ## Convention over Configuration
 - Stops when a test fails
 - Sleeps 1 second after every test for cleanups (DB, ...)
+- Outputs test time in seconds (rounding)
 
 ## Why?
 - Go Unit Tests can run in parallel
