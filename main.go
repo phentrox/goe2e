@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"github.com/phentrox/goseq/internal/cli/cliCommands"
 	"github.com/phentrox/goseq/internal/cli/cliFlags"
 	"github.com/urfave/cli/v3"
 	"log"
@@ -15,11 +14,12 @@ func main() {
 		Usage:     "Go Sequential E2E Test Runner",
 		UsageText: "goseq [global options] [command [command options]]",
 		Version:   "0.1",
-		Commands: []*cli.Command{
-			cliCommands.Run(),
-		},
+		Commands:  []*cli.Command{},
 		Flags: []cli.Flag{
 			cliFlags.TestDir(),
+		},
+		Action: func(ctx context.Context, command *cli.Command) error {
+			return nil // needed so that there is no additional output (main command action always runs!)
 		},
 	}
 
