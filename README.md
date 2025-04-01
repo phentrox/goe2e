@@ -1,25 +1,26 @@
 # Go Sequential E2E Test Runner (In Development!)
 <img src=".github/logo.png" alt="Logo" width="400">
 
-## Run
+## Features
+- Fail Fast -> Stops when a test fails
+- Sleeps 1 second after every test for cleanups (DB, API, ...)
+- Prints individual test time
+- Prints total test time
+
+## Requirements
+- One folder for every test file
+- Every test file needs to end with 'test'
+- Every test file only should have one test method! (Keeps sequential order)
+
+## Commands
 ```sh
 # default test dir: testing/testingE2E
-goseq run
+goseq
 
 # run with custom test dir
 goseq --dir customTesting run
 goseq -d customTesting run
 ```
-
-## Readme
-- One folder for every test file
-- Every test file needs to end with 'test'
-- Every test file only should have one test method! (Keeps sequential order)
-
-## Convention over Configuration
-- Fail Fast (Stops when a test fails)
-- Sleeps 1 second after every test for cleanups (DB, ...)
-- Outputs test time in seconds
 
 ## Why?
 - Go Unit Tests can run in parallel
