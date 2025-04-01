@@ -6,7 +6,7 @@ import (
 )
 
 func RunTimedE2ETests(testDirs []string) error {
-	println("### Testing End To End ###")
+	println("### Running Sequential End To End Testing ###")
 
 	start := time.Now()
 
