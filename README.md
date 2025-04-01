@@ -1,5 +1,5 @@
 # Go Sequential E2E Test Runner (In Development!)
-<img src=".github/logo.png" alt="Logo" width="700">
+<img src=".github/logo.png" alt="Logo" width="500">
 
 ## Run
 ```sh
