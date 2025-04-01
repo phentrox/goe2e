@@ -1,16 +1,16 @@
-package seqe2e
+package useCases
 
 import (
-	"log"
 	"time"
 )
 
-func RunE2ETests(testDirs []string) {
+func RunE2ETests(testDirs []string) error {
 	for _, testDir := range testDirs {
 		err := RunGoTest(testDir)
 		if err != nil {
-			log.Fatal(err)
+			return err
 		}
 		time.Sleep(1 * time.Second)
 	}
+	return nil
 }

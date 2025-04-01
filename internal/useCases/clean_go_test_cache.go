@@ -1,4 +1,4 @@
-package seqe2e
+package useCases
 
 import (
 	"log"

@@ -1,6 +1,6 @@
 install:
-	go build -o goSeqE2E ./cmd
-	sudo mv goSeqE2E /bin
+	go build -o goseq
+	sudo mv goseq /bin
 
 build:
-	go build -o goSeqE2E ./cmd
+	go build -o goseq

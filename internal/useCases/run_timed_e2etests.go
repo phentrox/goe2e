@@ -1,19 +1,23 @@
-package seqe2e
+package useCases
 
 import (
 	"fmt"
 	"time"
 )
 
-func RunTimedE2ETest(testDirs []string) {
+func RunTimedE2ETests(testDirs []string) error {
 	println("### Testing End To End ###")
 
 	start := time.Now()
 
-	RunE2ETests(testDirs)
+	err := RunE2ETests(testDirs)
+	if err != nil {
+		return err
+	}
 
 	end := time.Now()
 	elapsed := end.Sub(start)
 
 	fmt.Println("### Testing Time: ", elapsed.Round(time.Second).String(), " ###")
+	return nil
 }
