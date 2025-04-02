@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"github.com/phentrox/goseq/cmd"
 	"github.com/phentrox/goseq/internal/cli/cliFlags"
 	"github.com/urfave/cli/v3"
 	"log"
@@ -19,6 +20,10 @@ func main() {
 			cliFlags.TestDir(),
 		},
 		Action: func(ctx context.Context, command *cli.Command) error {
+			// only goseq without flags
+			if len(os.Args) == 1 {
+				return cmd.Run("testingE2E")
+			}
 			return nil // needed so that there is no additional output (main command action always runs!)
 		},
 	}
