@@ -1,4 +1,8 @@
 # Go Sequential E2E Test Runner (In Development!)
+![Go Report Card](https://goreportcard.com/badge/github.com/phentrox/goseq)
+![Lines-of-Code](https://img.shields.io/badge/lines--of--code-458-brightgreen)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/phentrox/goseq/go.yml?branch=main)
+
 <img src=".github/logo.png" alt="Logo" width="400">
 
 ## Features
