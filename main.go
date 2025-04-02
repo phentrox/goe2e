@@ -10,10 +10,10 @@ import (
 )
 
 func main() {
-	goseqCommand := cli.Command{
-		Name:      "goseq",
-		Usage:     "Go Sequential E2E Test Runner",
-		UsageText: "goseq [global options] [command [command options]]",
+	goe2eCommand := cli.Command{
+		Name:      "goe2e",
+		Usage:     "Go Sequential End-To-End Test Runner",
+		UsageText: "goe2e [global options] [command [command options]]",
 		Version:   "0.1",
 		Commands:  []*cli.Command{},
 		Flags: []cli.Flag{
@@ -23,13 +23,13 @@ func main() {
 			// only goseq without flags
 			// command.Args() does not include flags!
 			if len(os.Args) == 1 {
-				return cmd.Run("testingE2E")
+				return cmd.Run("testsE2E")
 			}
 			return nil // needed so that there is no additional output (main command action always runs!)
 		},
 	}
 
-	err := goseqCommand.Run(context.Background(), os.Args)
+	err := goe2eCommand.Run(context.Background(), os.Args)
 	if err != nil {
 		log.Fatal(err)
 	}
