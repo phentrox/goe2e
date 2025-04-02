@@ -14,7 +14,7 @@
 
 ## Commands
 ```sh
-# default test dir: testing/testingE2E
+# default test dir: testingE2E
 goseq
 
 # run with custom test dir
