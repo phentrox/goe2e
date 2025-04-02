@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
-	"github.com/phentrox/goseq/cmd"
-	"github.com/phentrox/goseq/internal/cli/cliFlags"
+	"github.com/phentrox/goe2e/cmd"
+	"github.com/phentrox/goe2e/internal/cli/cliFlags"
 	"github.com/urfave/cli/v3"
 	"log"
 	"os"

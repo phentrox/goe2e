@@ -1,4 +1,4 @@
-module github.com/phentrox/goseq
+module github.com/phentrox/goe2e
 
 go 1.23.4
 

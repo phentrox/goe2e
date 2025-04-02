@@ -2,7 +2,7 @@ package cliFlags
 
 import (
 	"context"
-	"github.com/phentrox/goseq/cmd"
+	"github.com/phentrox/goe2e/cmd"
 	"github.com/urfave/cli/v3"
 )
 
