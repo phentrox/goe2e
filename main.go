@@ -21,6 +21,7 @@ func main() {
 		},
 		Action: func(ctx context.Context, command *cli.Command) error {
 			// only goseq without flags
+			// command.Args() does not include flags!
 			if len(os.Args) == 1 {
 				return cmd.Run("testingE2E")
 			}
