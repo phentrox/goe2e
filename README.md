@@ -18,8 +18,8 @@
 goseq
 
 # run with custom test dir
-goseq --dir customTesting run
-goseq -d customTesting run
+goseq --dir customTesting
+goseq -d customTesting
 ```
 
 ## Why?
