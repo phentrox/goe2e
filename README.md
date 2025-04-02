@@ -1,4 +1,4 @@
-# Go Sequential E2E Test Runner (In Development!)
+# Go Sequential End-To-End Test Runner
 ![Go Report Card](https://goreportcard.com/badge/github.com/phentrox/goe2e)
 ![Lines-of-Code](https://img.shields.io/badge/lines--of--code-458-brightgreen)
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/phentrox/goseq/go.yml?branch=main)
